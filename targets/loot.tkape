@@ -1,0 +1,121 @@
+Description: Find loot 
+Author: 1337unicorn
+Version: 1
+Id: 3fb15cc6-f4e5-4a6d-975a-ee27153b3dcc
+RecreateDirectories: true
+Targets:
+    -
+        Name: KeePass DB (kdb)
+        Category: Password Manager
+        Path: C:\
+        FileMask: "*.kdb"
+        IsDirectory: true
+        Recursive: true
+        Comment: This target file finds KeePas kdb files 
+    -
+        Name: KeePass DB (pwd)
+        Category: Password Manager
+        Path: C:\
+        FileMask: "*.pwd"
+        IsDirectory: true
+        Recursive: true
+        Comment: This target file finds KeePas pwd files 
+    -
+        Name: PowerShell Readline Logs
+        Category: PowerShell Logs
+        Path: C:\Users\*\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
+        IsDirectory: false
+        Recursive: false
+        Comment: ''
+    -
+        Name: SAM registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\SAM.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ''
+    -
+        Name: SECURITY registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\SECURITY.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ''
+    -
+        Name: SOFTWARE registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\SOFTWARE.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ''
+    -
+        Name: SYSTEM registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\SYSTEM.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ''
+    -
+        Name: SAM registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\SAM
+        IsDirectory: false
+        Recursive: false
+        Comment: ''
+    -
+        Name: SECURITY registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\SECURITY
+        IsDirectory: false
+        Recursive: false
+        Comment: ''
+    -
+        Name: SOFTWARE registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\SOFTWARE
+        IsDirectory: false
+        Recursive: false
+        Comment: ''
+    -
+        Name: SYSTEM registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\SYSTEM
+        IsDirectory: false
+        Recursive: false
+        Comment: ''
+    -
+        Name: SAM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\SAM
+        IsDirectory: false
+        Recursive: false
+        Comment: ''
+    -
+        Name: SECURITY registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\SECURITY
+        IsDirectory: false
+        Recursive: false
+        Comment: ''
+    -
+        Name: SOFTWARE registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\SOFTWARE
+        IsDirectory: false
+        Recursive: false
+        Comment: ''
+    -
+        Name: SYSTEM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\SYSTEM
+        IsDirectory: false
+        Recursive: false
+        Comment: ''
+    -
+        Name: SYSTEM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\SYSTEM1
+        IsDirectory: false
+        Recursive: false
+        Comment: ''		
+
